@@ -19,6 +19,7 @@ class Module extends DataObject {
 	
 	private static $db = [
 		'Title' => 'Varchar(255)',
+		'Content' => 'HTMLText',
 		'Position' => 'Varchar(255)'
 	];
 	
@@ -70,11 +71,11 @@ class Module extends DataObject {
 	
 	/**
 	 * Render this module
-	 * This is auto-overwritten by creating a Modules/{ClassName} template in your templates directory
+	 * This is auto-overwritten by creating a {ClassName} template in your templates directory
 	 *
 	 * @return HTMLText
 	 **/
 	public function Layout(){
-		return $this->renderWith(['Modules/'.$this->Type(), 'Module']);
+		return $this->renderWith([$this->Type(), 'Module']);
 	}	
 }

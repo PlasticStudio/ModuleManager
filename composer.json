@@ -1,6 +1,6 @@
 {
 	"name": "plasticstudio/modulemanager",
-   	"type": "silverstripe-module",
+   	"type": "silverstripe-vendormodule",
 	"description": "Module Manager for SilverStripe - forked from jaedb/modulemanager",
 	"homepage": "http://plasticstudio.co.nz/",
 	"keywords": ["silverstripe"],
@@ -10,7 +10,11 @@
 			"name": "James Barnsley",
 			"homepage": "https://jamesbarnsley.co.nz",
 			"email": "james@barnsley.nz"
-		}
+		},
+        {
+            "name": "Joseph Lewis",
+            "email": "joe@psdigital.co.nz"
+        }
 	],
 	"support": {
 		"issues": "https://github.com/PlasticStudio/ModuleManager"
