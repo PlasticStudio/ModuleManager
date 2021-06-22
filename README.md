@@ -11,8 +11,8 @@ Manage site-wide modules (aka widgets) and select the pages on which they are to
 
 For a Silverstripe CMS 4.x compatible version of this module, please see the 3.x or 4.x release line.  
 
-3.x uses legacy namespace (Jaedb\ModuleManager) 
-4.x uses new namespace (plasticstudio\ModuleManager)
+* Release 4.x uses new namespace (plasticstudio\ModuleManager)
+* Release 3.x uses legacy namespace (Jaedb\ModuleManager) 
 
 For a Silverstripe CMS 3.x compatible version of this module, please see the 3 branch, or 2.x release line.
 
