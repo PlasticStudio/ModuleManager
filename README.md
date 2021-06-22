@@ -9,6 +9,11 @@ Manage site-wide modules (aka widgets) and select the pages on which they are to
 * SilverStripe GridFieldExtensions module (`https://github.com/ajshort/silverstripe-gridfieldextensions`)
 
 
+For a Silverstripe CMS 4.x compatible version of this module, please see the master branch, please see the 3.x or 4.x release line.
+
+For a Silverstripe CMS 3.x compatible version of this module, please see the 3 branch, or 2.x release line.
+
+
 # Installation
 
 1. Clone this repository into your root folder (ie `public_html/module-manager`)
