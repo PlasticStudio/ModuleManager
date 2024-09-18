@@ -20,12 +20,8 @@
 		"issues": "https://github.com/PlasticStudio/ModuleManager"
 	},
 	"require": {
-		"silverstripe/cms": "^4",
-		"silverstripe/framework": "^4"
-	},
-	"require": {
-		"silverstripe/cms": "^4",
-		"silverstripe/framework": "^4",
+		"silverstripe/cms": "^4 || ^5",
+		"silverstripe/framework": "^4 || ^5",
         "silverstripe/vendor-plugin": "^1"
 	},
 	"minimum-stability": "dev"
