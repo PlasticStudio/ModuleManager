@@ -2,8 +2,8 @@
 
 namespace PlasticStudio\ModuleManager;
 
-use SilverStripe\ORM\DataExtension;
 use SilverStripe\ORM\ArrayList;
+use Silverstripe\Core\Extension;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\CheckboxField;
@@ -14,7 +14,7 @@ use SilverStripe\Forms\GridField\GridFieldPageCount;
 use Symbiote\GridFieldExtensions\GridFieldAddNewMultiClass;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
-class ModuleSiteTreeExtension extends DataExtension {
+class ModuleSiteTreeExtension extends Extension {
 	
 	private static $db = [
 		'InheritModules' => 'Boolean'
