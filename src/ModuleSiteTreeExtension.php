@@ -3,16 +3,16 @@
 namespace PlasticStudio\ModuleManager;
 
 use SilverStripe\Core\Extension;
-use SilverStripe\Model\List\ArrayList;
-use SilverStripe\Core\Config\Config;
 use SilverStripe\Forms\FieldList;
+use SilverStripe\Core\Config\Config;
 use SilverStripe\Forms\CheckboxField;
+use SilverStripe\Model\List\ArrayList;
 use SilverStripe\Forms\GridField\GridField;
-use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
-use SilverStripe\Forms\GridField\GridFieldAddNewButton;
 use SilverStripe\Forms\GridField\GridFieldPageCount;
-use Symbiote\GridFieldExtensions\GridFieldAddNewMultiClass;
+use SilverStripe\Forms\GridField\GridFieldAddNewButton;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
+use Symbiote\GridFieldExtensions\GridFieldAddNewMultiClass;
+use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
 
 class ModuleSiteTreeExtension extends Extension {
 	
