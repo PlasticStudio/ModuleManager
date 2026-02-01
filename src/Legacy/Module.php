@@ -10,5 +10,5 @@ namespace Jaedb\ModuleManager;
 class Module extends \PlasticStudio\ModuleManager\Module {
 
     // Legacy DB support, but use the correct new template
-    private static $template = 'PlasticStudio\\ModuleManager\\Module';
+    private static $template = 'Modules/Module';
 }
