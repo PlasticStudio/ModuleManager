@@ -58,15 +58,15 @@ class Module extends DataObject {
 		return $fields;
 	}
 
-	/**
-	 * Type
-	 * Based on class name, but the simplified version (ie not FQCN)
-	 *
-	 * @return string
-	 **/
-	public function Type(){
-        return $this->ClassName;
-	}
+	// /**
+	//  * Type
+	//  * Based on class name, but the simplified version (ie not FQCN)
+	//  *
+	//  * @return string
+	//  **/
+	// public function Type(){
+    //     return $this->ClassName;
+	// }
 
 	
 	/**
@@ -75,7 +75,16 @@ class Module extends DataObject {
 	 *
 	 * @return HTMLText
 	 **/
-	public function Layout(){
-		return $this->renderWith([$this->Type(), 'Module']);
+	// public function Layout(){
+	// 	return $this->renderWith([$this->Type(), 'Module']);
+	// }	
+	public function Layout()
+	{
+		return $this->renderWith([
+			'Modules/' . $this->ClassName,
+			'Modules/Module',
+			$this->ClassName,
+			'Module'
+		]);
 	}	
 }
