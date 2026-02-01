@@ -40,7 +40,8 @@ For a Silverstripe CMS 3.x compatible version of this module, please see the 3 b
 
 ### Create a module instance
 1. Within the *Module Manager* admin, create a new `Module` object. The *type* dropdown will show the list of available module types.
-2. Assign your new `Module` object to one of the positions you configured in `config.yml`.
+2. Assign your new `Module` object to one of the positions you configured in `config.yml` and set a page reference.
+3. Alternatively, add the module directly to the page in the Modules tab.
 
 ### Build a custom module type
 1. Create a new DataObject file `app/src/Modules/MyModule.php`:
@@ -67,7 +68,7 @@ For a Silverstripe CMS 3.x compatible version of this module, please see the 3 b
   }
   ```
   
-2. Create your template file `app/templates/{NameSpace}}/MyModule.ss`:
+2. Create your template file `app/templates/Modules/MyModule.ss`:
   ```
     <div class="module module_my-module">
 		<h3>$Title</h3>
