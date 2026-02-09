@@ -19,15 +19,20 @@ class Admin extends ModelAdmin {
 		Module::class
     );
 
-    public function getEditForm($id = null, $fields = null){
+    public function getEditForm($id = null, $fields = null)
+    {
         $form = parent::getEditForm($id, $fields);
 
         $gridFieldName = $this->sanitiseClassName(Module::class);
         $gridField = $form->Fields()->fieldByName($gridFieldName);
 
-        // Swap out our "Add" button for the multiclass Add
-        $gridField->getConfig()->addComponent(new GridFieldAddNewMultiClass());
-		$gridField->getConfig()->removeComponentsByType(GridFieldAddNewButton::class);
+        if ($gridField) {
+            $config = $gridField->getConfig();
+            // Remove the default "Add" button first
+            $config->removeComponentsByType(GridFieldAddNewButton::class);
+            // Then add our multiclass Add button
+            $config->addComponent(new GridFieldAddNewMultiClass());
+        }
 
         return $form;
     }
